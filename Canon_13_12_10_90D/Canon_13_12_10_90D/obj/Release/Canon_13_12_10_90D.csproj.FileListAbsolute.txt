@@ -1,0 +1,9 @@
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\bin\Release\EDSDK.dll
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\bin\Release\EdsImage.dll
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\bin\Release\EDSDK.lib
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\bin\Release\Canon_13_12_10_90D.dll
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\bin\Release\Canon_13_12_10_90D.pdb
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\obj\Release\Canon_13_12_10_90D.csproj.AssemblyReference.cache
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\obj\Release\Canon_13_12_10_90D.csproj.CoreCompileInputs.cache
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\obj\Release\Canon_13_12_10_90D.dll
+C:\SAVIN\VS1_10_16\New DB\Canon_13_12_10_90D\obj\Release\Canon_13_12_10_90D.pdb

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5EC1DA3-93CB-433F-8C24-B6EAA84DE58C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Canon_13_12_10_90D</RootNamespace>
+    <AssemblyName>Canon_13_12_10_90D</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ProfilePhoto360|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ProfilePhoto360\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'XRF_Charts|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\XRF_Charts\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionEvent.cs" />
+    <Compile Include="ActionListener.cs" />
+    <Compile Include="ActionSource.cs" />
+    <Compile Include="CameraController.cs" />
+    <Compile Include="CameraEvent.cs" />
+    <Compile Include="CameraEventListener.cs" />
+    <Compile Include="CameraModel.cs" />
+    <Compile Include="CanonCamera.cs" />
+    <Compile Include="CanonErrors.cs" />
+    <Compile Include="CommandProcessor.cs" />
+    <Compile Include="Command\ClickWBCommand.cs" />
+    <Compile Include="Command\CloseSessionCommand.cs" />
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\DeleteAllFilesCommand.cs" />
+    <Compile Include="Command\DoEvfAFCommand.cs" />
+    <Compile Include="Command\DownloadAllFilesCommand.cs" />
+    <Compile Include="Command\DownloadCommand.cs" />
+    <Compile Include="Command\EVF\DownloadEvfCommand.cs" />
+    <Compile Include="Command\EVF\DriveLensCommand.cs" />
+    <Compile Include="Command\EVF\EndEvfCommand.cs" />
+    <Compile Include="Command\EVF\StartEvfCommand.cs" />
+    <Compile Include="Command\FileCounterCommand.cs" />
+    <Compile Include="Command\FormatVolumeCommand.cs" />
+    <Compile Include="Command\GetPropertyCommand.cs" />
+    <Compile Include="Command\GetPropertyDescCommand.cs" />
+    <Compile Include="Command\OpenSessionCommand.cs" />
+    <Compile Include="Command\PressShutterCommand.cs" />
+    <Compile Include="Command\SetPropertyCommand.cs" />
+    <Compile Include="Command\SetRecCommand.cs" />
+    <Compile Include="Command\SetRemoteShootingCommand.cs" />
+    <Compile Include="Command\SetRollPitchCommand.cs" />
+    <Compile Include="Command\SwitchMirrorUpCommand.cs" />
+    <Compile Include="Command\SwitchStillMovieCommand.cs" />
+    <Compile Include="Command\TakePictureCommand.cs" />
+    <Compile Include="EDSDK.cs" />
+    <Compile Include="Observer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropsEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EDSDK.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EdsImage.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EDSDK.lib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
