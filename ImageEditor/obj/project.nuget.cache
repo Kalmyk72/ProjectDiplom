@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3T/iOTvNHeE=",
+  "dgSpecHash": "JXJvUbmRplo=",
   "success": true,
-  "projectFilePath": "D:\\Виктор\\Диплом\\Test\\ImageEditor\\ImageEditor.csproj",
+  "projectFilePath": "D:\\ProjectDiplom\\ImageEditor\\ImageEditor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Виктор\\.nuget\\packages\\emgu.cv\\4.9.0.5494\\emgu.cv.4.9.0.5494.nupkg.sha512",
     "C:\\Users\\Виктор\\.nuget\\packages\\emgu.cv.bitmap\\4.9.0.5494\\emgu.cv.bitmap.4.9.0.5494.nupkg.sha512",
